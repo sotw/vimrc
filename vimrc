@@ -6,6 +6,9 @@
 
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
+"
+" modified by Pei-Chen(Hammer) Tsai <workthethird@gmail.com>
+" read me on GITHUB https://github.com/sotw/vimrc
 
 let g:pathogen_disabled = []
 if !has('gui_running')
@@ -75,9 +78,8 @@ set tm=500
 
 " TAB setting{
    set expandtab        "replace <TAB> with spaces
-   set softtabstop=3 
-   set shiftwidth=3 
-
+   set softtabstop=4
+   set shiftwidth=4
    au FileType Makefile set noexpandtab
 "}      							
 
@@ -317,7 +319,6 @@ let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc
 hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
 
-
 " --- NerdTree
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
 
@@ -339,3 +340,6 @@ au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile c
 
 " --- vim-gitgutter
 let g:gitgutter_enabled = 1
+
+" --- override tab setting ---
+set noet ci pi sts=0 sw=4 ts=4
