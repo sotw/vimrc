@@ -318,6 +318,9 @@ hi link EasyMotionTarget ErrorMsg
 hi link EasyMotionShade  Comment
 
 
+" --- NerdTree
+nnoremap <silent> <F8> :NERDTreeToggle<CR>
+
 " --- TagBar
 " toggle TagBar with F7
 nnoremap <silent> <F7> :TagbarToggle<CR> 
