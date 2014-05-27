@@ -321,6 +321,7 @@ hi link EasyMotionShade  Comment
 
 " --- NerdTree
 nnoremap <silent> <F8> :NERDTreeToggle<CR>
+nnoremap <silent> <F12>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"<CR>
 
 " --- TagBar
 " toggle TagBar with F7
